@@ -10,5 +10,5 @@ Este proyecto tomará como base para la toma de deciones de inversión en el mer
 * `Análisis exploratorio de datos:`   EDA.ipynb
 * `Dashboard:`   pages/01_Visualizaciones_📊🔎.py
 * `KPI's:`   pages/Inversión_recomendada_📈💸.py
-* `Deployment:`
+* `Deployment:`   https://facuberon-p-i--n-2-analytics-introduccin--n0waya.streamlit.app/
 
