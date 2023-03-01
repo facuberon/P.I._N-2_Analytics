@@ -20,9 +20,10 @@ col3.metric("Bitcoin", "O.50 c.c.", "24,635.46%")
 col1.metric("Cruede Oil","0.53 c.c.","229.02%")
 col2.metric("Cobre", "0.78 c.c.", "577.7%")
 col3.metric("Paladio", "O.84 c.c.", "668.23%")
-col1.metric("Cruede Oil","0.47 c.c.","138.89%")
+col1.metric("Gas natural","0.47 c.c.","138.89%")
 col2.metric("Litio", "0.80 c.c.", "896.48%")
 col3.metric("Ganado", "O.59 c.c.", "289,54%")
+
 
 st.text("c.c = Coeficiente de correlacion con base monetaria FED")
 

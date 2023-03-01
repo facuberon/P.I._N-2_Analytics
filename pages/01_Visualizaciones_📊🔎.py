@@ -137,7 +137,7 @@ ax.set_ylabel('Valor')
 ax.set_title('Comparación entre la Base Monetaria de la FED y el Valor Total del S&P500')
 
 ax.legend()
-
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
 
 st.markdown(''' El índice de correlación entre el S&P500 y la base monetaria es muy alto (`0.91`). Ambos estan fuertemente relacionados, como podemos ver en el gráfico de comparación, cuando la FED expande la base monetaria las acciones tienden a subir y cuando la FED contrae, tienden a bajar.
