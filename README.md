@@ -5,7 +5,7 @@
 ``TEMÁTICA`` :nerd_face::
 
 Este proyecto tomará como base para la toma de deciones de inversión en el mercado bursátil al índice `S&P500`, el más importante a nivel mundial ya que captura aproximadamente el 80% de toda la capitalización de mercado en Estados Unidos. 
- También, para el análisis de datos correspondiente, veremos la incidencia de la política monetatia de la `FED (Sistema de la Reserva Federal)` en la valoración de distintos activos financieros.
+ También, para el análisis de datos correspondiente, veremos la incidencia de la política monetaria de la `FED (Sistema de la Reserva Federal)` en la valoración de distintos activos financieros.
 
 * `Análisis exploratorio de datos:`   EDA.ipynb
 * `Dashboard:`   pages/01_Visualizaciones_📊🔎.py
