@@ -71,9 +71,9 @@ st.subheader('La política monetaria de la FED')
 
 st.text('Base monetaria: suma total de emisión de moneda')
 
-# Inicializar objeto Fred con API key
+# Inicializo objeto Fred con API key
 fred = Fred(api_key='a3c4e4a7fb46b9719f54facd9fd9aded')
-# Descargar los datos de la serie "Base Monetaria"
+# Descargo los datos de la serie "Base Monetaria"
 base_monetaria = fred.get_series('BOGMBASE', observation_start='2000-01-01')
 #st.line_chart(base_monetaria)
 base_monetaria_df = pd.DataFrame(base_monetaria)
@@ -88,10 +88,10 @@ fig2.update_yaxes(title_text="M = mil millones de dólares")
 st.plotly_chart(fig2)
 
 st.text('Tasas de interés: costo del crédito')
-# Obtener datos de la tasa federal de fondos federales (Federal Funds Rate) desde 2000
+# Obtengo datos de la tasa federal de fondos federales (Federal Funds Rate) desde 2000
 fedfunds_data = fred.get_series('FEDFUNDS', observation_start='2000-01-01')
 
-# Graficar datos
+# Grafico datos
 fedfunds_data_df = pd.DataFrame(fedfunds_data)
 fedfunds_data_df = fedfunds_data_df.rename_axis('Fecha')
 fedfunds_data_df = fedfunds_data_df.rename(columns={0:'Tasa'})
@@ -106,25 +106,25 @@ st.subheader('Correlación entre el S&P500 y la base monetaria')
 
 df2 = pd.concat([total_historico_valor, base_monetaria_df], axis=1)
 
-# Calcular la matriz de correlación
+# Calculo la matriz de correlación
 corr_matrix = df2.corr()
 
-# Mostrar la matriz de correlación
+# Muestro la matriz de correlación
 st.write(corr_matrix)
 
-# Crear un gráfico de correlación utilizando seaborn
-# Calcular la media y la desviación estándar de la serie "fed_data"
+# Creo un gráfico de correlación utilizando seaborn
+# Calculo la media y la desviación estándar de la serie "fed_data"
 fed_mean = np.mean(base_monetaria)
 fed_std = np.std(base_monetaria)
 
-# Estandarizar la serie "fed_data"
+# Estandarizo la serie "fed_data"
 fed_data_std = (base_monetaria - fed_mean) / fed_std
 
-# Calcular la media y la desviación estándar de la serie "sp500_data"
+# Calculo la media y la desviación estándar de la serie "sp500_data"
 sp500_mean = np.mean(total_historico_valor)
 sp500_std = np.std(total_historico_valor)
 
-# Estandarizar la serie "sp500_data"
+# Estandarizo la serie "sp500_data"
 sp500_data_std = (total_historico_valor - sp500_mean) / sp500_std
 
 fig, ax = plt.subplots(figsize=(10, 6))
